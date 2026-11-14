@@ -1,0 +1,41 @@
+{
+  "name": "dsh-breaker",
+  "version": "0.1.0",
+  "description": "自动跳闸：DSH 的一轮对话长时间没有进展时，通过官方 agent API 取消它。",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "agent",
+    "stuck",
+    "pause",
+    "cancel"
+  ],
+  "license": "MIT",
+  "author": "ai-tools-works",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-tools-works/dsh-breaker.git"
+  },
+  "homepage": "https://github.com/ai-tools-works/dsh-breaker#readme",
+  "bugs": {
+    "url": "https://github.com/ai-tools-works/dsh-breaker/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
