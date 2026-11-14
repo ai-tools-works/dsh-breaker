@@ -1,0 +1,11 @@
+# 本插件的安装 patch：dsh 加载 bundle 时把下面这一行插入组合树。
+# id 是组合树里的行标识，name 是插件包名，config 会原样传给 apply(ctx, config)。
+- insert:
+    - id: breaker
+      name: 'dsh-breaker'
+      config:
+        enabled: true
+        stallMs: 90000
+        checkMs: 15000
+        keepInbox: true
+        graceMs: 10000
